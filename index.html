@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>翻转棋(黑白子)</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        canvas{
+
+            position: fixed;
+            left:50%;
+            top:10%;
+            margin-left:-394px;
+            border:1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <audio src="audio/bgm.mp3" id="bgm" autoplay="autoplay" loop="loop"></audio>
+    <audio preload="auto" src="audio/luozi.wav" id="luozi"></audio>
+    <audio preload="auto" src="audio/tips.wav" id="tips"></audio>
+    <canvas id="mycanvas" width="788" height="588"></canvas>
+    <script src="js/lib/simpleInheritance.js"></script>
+    <script src="js/lib/underscore-min.js"></script>
+    <script src="js/lib/jquery-1.12.4.min.js"></script>
+    <script src="js/Game.js"></script>
+    <script src="js/Scene.js"></script>
+    <script src="js/Begin.js"></script>
+    <script src="js/Chessboard.js"></script>
+    <script src="js/Chesspiece.js"></script>
+    <script src="js/AI.js"></script>
+    <script type="text/javascript">
+         var game=new Game();
+    </script>
+</body>
+</html>
